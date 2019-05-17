@@ -1,0 +1,56 @@
+
+/*
+Buttons & Links Styling
+*/
+
+.btn-primary {
+  background-color:$primary-link-color;
+  border: $primary-link-color;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background-color: lighten($primary-link-color, 15%);
+  }
+}
+
+[class*='--disabled'] {
+  background-color: lightgrey !important;
+  cursor:text !important;
+  color:grey !important;
+}
+
+.btn-outline-primary {
+  border-color: #bf8d43;
+  color:#bf8d43;
+  &:hover {
+    background-color: lighten($primary-link-color, 15%);
+    border:0;
+    outline:none;
+  }
+}
+
+.current-page {
+  color: white !important;
+  font-weight:bold;
+}
+
+.link-regular {
+  color: #b7b7b7;
+  display:block;
+  padding:1rem;
+  &:hover {
+    color:black;
+    text-decoration:none;
+  }
+}
+
+.button-group {
+  width:185px;
+  justify-content:space-between;
+}
+
+a {
+  color: $paragraph-light;
+  &:hover {
+ color: lighten($paragraph-light, 50%);
+  }
+}

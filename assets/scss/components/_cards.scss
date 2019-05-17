@@ -1,0 +1,167 @@
+
+
+
+
+// STYLES SHARED BY MULTIPLE TEMPLATES
+
+.card:hover {
+  box-shadow: 10px 10px 46px -17px rgba(0,0,0,0.75);
+  transform:translateY(-10px);
+}
+
+.grid-list {
+width:100%;
+margin-bottom:1rem;
+}
+
+.grid-item {
+box-sizing:border-box;
+flex-basis:250px;
+flex-grow: 1;
+max-width:300px;
+padding: 0 !important;
+margin:1em;
+opacity:0;
+transition:0.25s ease-in-out;
+}
+
+
+.haircut-image {
+  height:300px;
+  width:300px;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+  img {
+    width:100%;
+  }
+}
+
+.card-body {
+  position:relative;
+  padding-bottom:0;
+  a {
+    text-decoration:None;
+    &:Hover {
+      text-decoration:none;
+      .card-title {
+        color: $primary-link-color;
+      }
+    }
+  }
+  .card-title {
+    margin-bottom:0;
+    color:black;
+  }
+}
+
+.card-footer {
+  padding: 0;
+  &:hover {
+    background-color:darken(#fff, 8%);
+  }
+}
+
+.barber-header-info {
+flex: 2;
+}
+
+.barber-header-icon {
+  flex:1;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.barber-cut__icon {
+  font-size:2rem;
+}
+
+.barber-cuts-value {
+  margin-left:7px;
+  font-weight:600;
+  color: $primary-link-color;
+}
+
+.image-container {
+overflow:hidden;
+position:relative;
+height:200px;
+}
+
+.image-container:before {
+  content:"";
+  position:absolute;
+  transform:translateY(100%);
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#bf8d43;
+  color:white;
+  opacity:0.8;
+  transition:0.25s ease-in-out;
+}
+
+.card:hover .image-container:before {
+  transform:translateY(0) !important;
+}
+
+.swiper-slide {
+  min-width:400px;
+}
+
+@media only screen and (min-width:600) {
+.swiper-slide {
+
+}
+}
+
+@media only screen and (min-width:600) {
+
+}
+
+
+
+// FEATURED CUTS - HOMEPAGE
+
+
+
+// GALLERY IMAGE CARD
+
+.gallery-image {
+  height:250px;
+  &:hover {
+    img {
+    animation: hoverState 1s ease-in-out;
+    }
+  }
+}
+
+@keyframes hoverState {
+  0% {
+    transform:scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform:scale(2) rotate(15deg);
+  }
+
+  100% {
+    transform:scale(1) rotate(0deg);
+  }
+}
+
+// TEAM MEMBER CARD
+
+
+
+
+
+
+
+
+
+// Media Queries

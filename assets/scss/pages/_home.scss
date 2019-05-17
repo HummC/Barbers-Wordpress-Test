@@ -1,0 +1,183 @@
+/*
+STYLES SPECIFIC TO FRONT LANDING PAGE (FRONT-PAGE.PHP)
+*/
+
+
+// ABOUT  - SECTION STYLES
+.about {
+        position:relative;
+        min-height:600px;
+        background-image:linear-gradient(-90deg,rgba(0,0,0,0.0) 0%,#171717f7 50%),url(/assets/marketing/about/overview/bg-header-a23be32….jpg);
+
+    .about-section__title {
+        font-size:1.5rem;
+        color:#bf8d43;
+    }
+
+    .company-info {
+      opacity:0;
+    }
+    .company-info__description {
+       color:#d0d0d0;
+     }
+
+     .company-info__title {
+       color:White;
+       font-weight:600;
+     }
+
+    &:before {
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image:url('https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-size:cover;
+        filter:saturate(60%);
+        z-index:-1;
+      }
+    }
+
+    .image-responsive {
+      width:100%;
+      max-width:100%;
+      overflow:hidden;
+      margin: auto;
+    }
+
+// OPENING TIMES - TABLE STYLES
+
+.opening-times {
+  opacity:0;
+}
+
+.day-column--active ~ td {
+background-color: #ecddc6 !important;
+border: 0 !important;
+}
+.about-section__title {
+font-size:1.5rem;
+color:#bf8d43;
+}
+
+.opening-times__title {
+color:white;
+}
+
+thead {
+background-color:#191919;
+}
+
+thead th {
+color:White;
+}
+
+th, td, tr {
+ border: 0 !important;
+}
+
+table {
+border:0;
+}
+
+.day-column ~ td {
+border:1px solid #efefefef;
+background-color:White;
+}
+
+.day-column {
+background-color: rgba(56,56,56,0.75);
+color:White;
+}
+
+.day-column--active {
+background-color:#bf8d43 !important;
+}
+
+
+// FEATURED CUTS - SECTION STYLES
+
+.featured-cuts {
+  background-color:#efefefef;
+}
+
+.featured-heading {
+height:300px;
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+}
+
+.featured-cuts__description {
+  max-width:70ch;
+     text-align:center;
+     margin: 1rem 0;
+     padding-bottom:2em;
+}
+
+.scissors {
+        width:50px;
+      }
+
+      .price-tag {
+       font-weight:600;
+     }
+     .price-tag em {
+       font-weight:light;
+       color:#bf8d43;
+     }
+
+     .member-haircut-grid {
+       display: grid;
+       justify-content:center;
+       margin: auto;
+       margin-top:2rem;
+       grid-template-columns: repeat(2,minmax(100px, 150px));
+       grid-template-rows: 100px 100px;
+       grid-gap:5px;
+     }
+
+     .haircut-grid__item {
+       position:relative;
+       background:White;
+       padding:1em;
+     }
+
+
+.pane-right {
+  display:Flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:flex-start;
+  opacity:0;
+  h3 {
+    color:white;
+  }
+}
+
+// Our Team - Section Styles
+
+.the-team {
+  min-height:500px;
+  background-color:#171717;
+  color:#d0d0d0;
+}
+
+
+.footer-copyright {
+  background:#212121 !important;
+}
+// Media Queries
+
+@media screen and (min-width: 900px) {
+  .barbers-head__title {
+    text-align:left;
+  }
+
+  .barbers-member__list {
+    justify-content:center;
+  }
+}

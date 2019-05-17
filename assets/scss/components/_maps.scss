@@ -1,0 +1,16 @@
+#map {
+  height:425px;
+  width:100%;
+}
+
+
+div#map {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.25s ease-in-out;
+}
+
+div#map:focus {
+    filter: grayscale(0%);
+    opacity: 1;
+}

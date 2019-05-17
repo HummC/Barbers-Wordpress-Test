@@ -1,0 +1,40 @@
+/*
+Site-Header & Header-Navigation Styling
+*/
+
+.header-navigation {
+       background-color:transparent !important;
+     }
+
+     .header-navigation__button:hover {
+       color:#bf8d43;
+     }
+
+     .header-navigation__button {
+       color:$primary-link-color;
+     }
+
+     .site-header {
+       background-color: $primary-background-grey;
+     }
+
+     .navbar-brand {
+       color: white !important;
+     }
+
+     .nav-link {
+      color:#b1b1b1 !important;
+    }
+
+    .current-link {
+      color: white !important;
+    font-weight:bolder;
+    }
+
+    .alert-light {
+    background-color:$secondary-background-grey !important;
+    border-bottom:1px solid grey;
+    }
+
+
+// Media Queries

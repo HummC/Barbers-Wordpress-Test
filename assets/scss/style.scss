@@ -1,0 +1,84 @@
+/*!
+Theme Name: Simple Barbers
+Author: Carl
+Version 1.0
+Description: Created for daily site challenge.
+*/
+
+
+@import './utility/all';
+@import './layout/all';
+@import './components/all';
+@import './base/all';
+@import './pages/all';
+
+
+// CUSTOM BASE STYLES
+body {
+  background:#efefefef;
+}
+
+
+.swiper-container {
+   width: 100%;
+   height: 100%;
+ }
+ .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   width:200px;
+   background: #fff;
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+ }
+
+
+
+a {
+  cursor: pointer;
+}
+
+// NON SPECIFIC STYLING
+
+
+.flex-item {
+      display:flex;
+      justify-content:center;
+      padding:10px;
+      width:100%;
+    }
+
+.content-area {
+    position:relative;
+      &:before {
+        content:"";
+        position:absolute;
+        width:100%;
+        height:100%;
+        filter:grayscale(70%);
+        opacity:0.3;
+      }
+    }
+
+.content {
+        background-color:white;
+        z-index:2;
+        padding: 3rem !important;
+        margin: 3rem 0rem;
+        border: 1px solid lightgrey;
+        }
+
+div[class^="image-"] img {
+  width:100%;
+}
